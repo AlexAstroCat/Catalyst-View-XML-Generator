@@ -1,0 +1,39 @@
+Catalyst-Action-Serialize-XML-PerlData
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+	perl Makefile.PL
+	make
+	make test
+	make install
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc Catalyst::Action::Serialize::XML::PerlData
+
+You can also look for information at:
+
+    RT, CPAN's request tracker
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Catalyst-Action-Serialize-XML-PerlData
+
+    AnnoCPAN, Annotated CPAN documentation
+        http://annocpan.org/dist/Catalyst-Action-Serialize-XML-PerlData
+
+    CPAN Ratings
+        http://cpanratings.perl.org/d/Catalyst-Action-Serialize-XML-PerlData
+
+    Search CPAN
+        http://search.cpan.org/dist/Catalyst-Action-Serialize-XML-PerlData/
+
+
+COPYRIGHT AND LICENCE
+
+Copyright (c) 2009 Michael Nachbaur
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.

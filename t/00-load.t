@@ -3,7 +3,7 @@
 use Test::More tests => 1;
 
 BEGIN {
-	use_ok( 'Catalyst::View::XML::PerlData' );
+	use_ok( 'Catalyst::View::XML::Generator' );
 }
 
-diag( "Testing Catalyst::View::XML::PerlData $Catalyst::View::XML::PerlData::VERSION, Perl $], $^X" );
+diag( "Testing Catalyst::View::XML::Generator $Catalyst::View::XML::Generator::VERSION, Perl $], $^X" );

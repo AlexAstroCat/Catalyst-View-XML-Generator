@@ -1,4 +1,4 @@
-package Catalyst::View::XML::PerlData;
+package Catalyst::View::XML::Generator;
 use Moose;
 BEGIN { extends 'Catalyst::View' }
 
@@ -8,7 +8,7 @@ use namespace::clean;
 
 =head1 NAME
 
-Catalyst::View::XML::PerlData - Serialize the stash as XML using XML::Generator::PerlData
+Catalyst::View::XML::Generator - Serialize the stash as XML using XML::Generator::PerlData
 
 =head1 VERSION
 
@@ -21,7 +21,7 @@ our $VERSION = '0.01';
 =head1 SYNOPSIS
 
     __PACKAGE__->config(
-        'XML::PerlData' => {
+        'XML::Generator' => {
             rootname => 'document',
             attrmap => {
                 action => [qw( class name )],
@@ -63,8 +63,8 @@ Michael Nachbaur, C<< <mike@nachbaur.com> >>
 
 =head1 BUGS
 
-Please report any bugs or feature requests to C<bug-catalyst-view-xml-perldata at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Catalyst-View-XML-PerlData>.  I will be notified, and then you'll
+Please report any bugs or feature requests to C<bug-catalyst-view-xml-generator at rt.cpan.org>, or through
+the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Catalyst-View-XML-Generator>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
 =head1 SEE ALSO
@@ -75,7 +75,7 @@ L<Catalyst>, L<Catalyst::View>, L<XML::Generator::PerlData>
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc Catalyst::View::XML::PerlData
+    perldoc Catalyst::View::XML::Generator
 
 You can also look for information at:
 
@@ -83,19 +83,19 @@ You can also look for information at:
 
 =item * RT: CPAN's request tracker
 
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Catalyst-View-XML-PerlData>
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Catalyst-View-XML-Generator>
 
 =item * AnnoCPAN: Annotated CPAN documentation
 
-L<http://annocpan.org/dist/Catalyst-View-XML-PerlData>
+L<http://annocpan.org/dist/Catalyst-View-XML-Generator>
 
 =item * CPAN Ratings
 
-L<http://cpanratings.perl.org/d/Catalyst-View-XML-PerlData>
+L<http://cpanratings.perl.org/d/Catalyst-View-XML-Generator>
 
 =item * Search CPAN
 
-L<http://search.cpan.org/dist/Catalyst-View-XML-PerlData/>
+L<http://search.cpan.org/dist/Catalyst-View-XML-Generator/>
 
 =back
 

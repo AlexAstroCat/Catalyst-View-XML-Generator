@@ -1,4 +1,4 @@
-Catalyst-Action-Serialize-XML-PerlData
+Catalyst-View-XML-PerlData
 
 INSTALLATION
 
@@ -14,21 +14,21 @@ SUPPORT AND DOCUMENTATION
 After installing, you can find documentation for this module with the
 perldoc command.
 
-    perldoc Catalyst::Action::Serialize::XML::PerlData
+    perldoc Catalyst::View::XML::PerlData
 
 You can also look for information at:
 
     RT, CPAN's request tracker
-        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Catalyst-Action-Serialize-XML-PerlData
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Catalyst-View-XML-PerlData
 
     AnnoCPAN, Annotated CPAN documentation
-        http://annocpan.org/dist/Catalyst-Action-Serialize-XML-PerlData
+        http://annocpan.org/dist/Catalyst-View-XML-PerlData
 
     CPAN Ratings
-        http://cpanratings.perl.org/d/Catalyst-Action-Serialize-XML-PerlData
+        http://cpanratings.perl.org/d/Catalyst-View-XML-PerlData
 
     Search CPAN
-        http://search.cpan.org/dist/Catalyst-Action-Serialize-XML-PerlData/
+        http://search.cpan.org/dist/Catalyst-View-XML-PerlData/
 
 
 COPYRIGHT AND LICENCE

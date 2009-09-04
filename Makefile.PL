@@ -7,7 +7,7 @@ license  'perl';
 
 requires 'Catalyst::View';
 requires 'XML::LibXML::SAX::Builder';
-requires 'XML::Generator::Generator';
+requires 'XML::Generator::PerlData';
 requires 'namespace::clean';
 
 test_requires 'Test::More';

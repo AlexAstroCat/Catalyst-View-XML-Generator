@@ -97,6 +97,10 @@ L<http://cpanratings.perl.org/d/Catalyst-View-XML-Generator>
 
 L<http://search.cpan.org/dist/Catalyst-View-XML-Generator/>
 
+=item * Download the source from Github
+
+L<http://github.com/NachoMan/Catalyst-View-XML-Generator/>
+
 =back
 
 =head1 COPYRIGHT & LICENSE

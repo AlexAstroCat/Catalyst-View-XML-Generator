@@ -12,11 +12,11 @@ Catalyst::View::XML::Generator - Serialize the stash as XML using XML::Generator
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
@@ -43,15 +43,17 @@ sub process {
 
     my $conf = $c->config->{'View::XML'};
 
-    my $builder = XML::SAX::Writer->new(output => \my $content);
+    my $content = '';
+    my $builder = XML::SAX::Writer->new(Output => \$content);
     my $generator = XML::Generator::PerlData->new(
         Handler => $builder,
         %{ $conf }
     );
 
     my $dom = $generator->parse($c->stash);
-    $c->res->headers->header("Content-Type" => "text/xml");
-    $c->res->body( $content );
+
+    $c->response->content_type("text/xml");
+    $c->response->body($content);
     1;
 }
 

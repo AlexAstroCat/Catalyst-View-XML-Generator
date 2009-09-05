@@ -6,8 +6,8 @@ author   'Michael Nachbaurt <mike@nachbaur.com>';
 license  'perl';
 
 requires 'Catalyst::View';
-requires 'XML::LibXML::SAX::Builder';
-requires 'XML::Generator::Generator';
+requires 'XML::SAX::Writer';
+requires 'XML::Generator::PerlData';
 requires 'namespace::clean';
 
 test_requires 'Test::More';

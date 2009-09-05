@@ -2,7 +2,7 @@ package Catalyst::View::XML::Generator;
 use Moose;
 BEGIN { extends 'Catalyst::View' }
 
-use XML::LibXML::SAX::Builder;
+use XML::SAX::Writer;
 use XML::Generator::PerlData;
 use namespace::clean;
 
@@ -42,18 +42,16 @@ sub process {
     my ($self, $c) = @_;
 
     my $conf = $c->config->{'View::XML'};
-    my $builder = XML::LibXML::SAX::Builder->new();
+
+    my $builder = XML::SAX::Writer->new(output => \my $content);
     my $generator = XML::Generator::PerlData->new(
         Handler => $builder,
         %{ $conf }
     );
 
     my $dom = $generator->parse($c->stash);
-    my $content = $dom->toString(1);
-
     $c->res->headers->header("Content-Type" => "text/xml");
     $c->res->body( $content );
-
     1;
 }
 
